@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oliva Table — Fresh Mediterranean cuisine, seasonal ingredients and unforgettable dining.">
+  <title>Oliva Table | Mediterranean Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    Fresh ingredients. Mediterranean soul.
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-icon">✳</span>
+      OLIVA <span>TABLE</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-button" href="#reservation">Book a Table ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">A TASTE OF THE MEDITERRANEAN</span>
+        <h1>Good food.<br><em>Beautiful moments.</em></h1>
+        <p>Seasonal ingredients, honest flavours and a table waiting just for you.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="button button-light">Explore Our Menu ↗</a>
+          <a href="#story" class="text-link">Discover our story</a>
+        </div>
+        <div class="hero-note">✳ MADE WITH LOVE, SERVED WITH SOUL</div>
+      </div>
+      <div class="hero-caption">SIMPLE INGREDIENTS · TIMELESS FLAVOURS</div>
+    </section>
+
+    <section class="intro section" id="story">
+      <div class="intro-image">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+          alt="Warm and welcoming restaurant interior">
+        <div class="image-label">A PLACE TO SLOW DOWN</div>
+      </div>
+      <div class="intro-copy">
+        <span class="eyebrow green">WELCOME TO OLIVA</span>
+        <h2>Rooted in tradition.<br><em>Made for today.</em></h2>
+        <p>We believe the best meals are the ones shared. Inspired by the Mediterranean coast, our kitchen brings together fresh seasonal produce, vibrant flavours and the simple joy of eating well.</p>
+        <p>Come as you are. Stay a little longer.</p>
+        <a href="#contact" class="underlined-link">A little more about us ↗</a>
+        <div class="signature">With love, from our kitchen <span>✳</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow green">FRESH FROM OUR KITCHEN</span>
+        <h2>A menu to <em>savour.</em></h2>
+        <p>Simple ingredients. Big flavours. Made fresh every day.</p>
+      </div>
+
+      <div class="filters" aria-label="Filter menu">
+        <button class="filter active" data-category="all">All dishes</button>
+        <button class="filter" data-category="starters">Starters</button>
+        <button class="filter" data-category="mains">Main dishes</button>
+        <button class="filter" data-category="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish" data-category="starters">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Fresh Mediterranean salad">
+            <span class="dish-tag">FRESH PICK</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Garden Burrata</h3><p>Tomatoes, creamy burrata, basil & olive oil.</p></div>
+            <span class="price">18 DT</span>
+          </div>
+        </article>
+
+        <article class="dish" data-category="mains">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80" alt="Pasta with fresh herbs">
+          </div>
+          <div class="dish-info">
+            <div><h3>Lemon Garden Pasta</h3><p>Fresh pasta, lemon zest, parmesan & herbs.</p></div>
+            <span class="price">26 DT</span>
+          </div>
+        </article>
+
+        <article class="dish" data-category="mains">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80" alt="Grilled salmon with vegetables">
+            <span class="dish-tag">CHEF'S PICK</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Coastal Catch</h3><p>Seasonal fish, roasted vegetables & citrus.</p></div>
+            <span class="price">38 DT</span>
+          </div>
+        </article>
+
+        <article class="dish" data-category="desserts">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=700&q=80" alt="Creamy layered dessert">
+          </div>
+          <div class="dish-info">
+            <div><h3>Classic Tiramisu</h3><p>Espresso, mascarpone & cocoa.</p></div>
+            <span class="price">14 DT</span>
+          </div>
+        </article>
+
+        <article class="dish" data-category="starters">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=700&q=80" alt="Mediterranean flatbread">
+          </div>
+          <div class="dish-info">
+            <div><h3>Oliva Bruschetta</h3><p>Toasted bread, tomato, garlic & basil.</p></div>
+            <span class="price">15 DT</span>
+          </div>
+        </article>
+
+        <article class="dish" data-category="desserts">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Ice cream dessert">
+          </div>
+          <div class="dish-info">
+            <div><h3>Sweet Summer</h3><p>Seasonal fruit, vanilla cream & crumble.</p></div>
+            <span class="price">12 DT</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-disclaimer">Demo menu and prices — please confirm all details with the restaurant.</p>
+    </section>
+
+    <section class="quote-section">
+      <span class="eyebrow">THE OLIVA WAY</span>
+      <h2>“The secret ingredient<br>is always <em>togetherness.</em>”</h2>
+      <p>GOOD FOOD · GOOD COMPANY · GOOD LIFE</p>
+    </section>
+
+    <section class="reservation section" id="reservation">
+      <div class="reservation-copy">
+        <span class="eyebrow green">YOUR TABLE IS WAITING</span>
+        <h2>Make room for<br><em>something lovely.</em></h2>
+        <p>Planning a dinner, a little celebration or simply a good meal? We'd love to welcome you.</p>
+        <div class="opening-hours">
+          <span>OPENING HOURS</span>
+          <p>Monday – Sunday</p>
+          <strong>12:00 – 23:00</strong>
+        </div>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <h3>Request a reservation</h3>
+        <p class="form-note">Fill in your details to prepare your booking request.</p>
+
+        <label for="guestName">Your name</label>
+        <input id="guestName" name="name" type="text" placeholder="Full name" required>
+
+        <div class="form-row">
+          <div>
+            <label for="guestDate">Date</label>
+            <input id="guestDate" name="date" type="date" required>
+          </div>
+          <div>
+            <label for="guestTime">Time</label>
+            <select id="guestTime" name="time" required>
+              <option value="">Choose time</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+              <option>22:00</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="guestCount">Number of guests</label>
+        <select id="guestCount" name="guests" required>
+          <option value="1">1 guest</option>
+          <option value="2" selected>2 guests</option>
+          <option value="3">3 guests</option>
+          <option value="4">4 guests</option>
+          <option value="5">5 guests</option>
+          <option value="6">6 guests</option>
+          <option value="7+">7+ guests</option>
+        </select>
+
+        <label for="guestPhone">Phone number</label>
+        <input id="guestPhone" name="phone" type="tel" placeholder="+216 ..." required>
+
+        <button class="button button-green full-button" type="submit">Prepare Booking Request ↗</button>
+        <p class="form-note">Demo only: this form prepares a WhatsApp message. It does not confirm a reservation.</p>
+      </form>
+    </section>
+
+    <section class="contact-banner" id="contact">
+      <div>
+        <span class="eyebrow">COME SAY HELLO</span>
+        <h2>Good things happen<br><em>around a table.</em></h2>
+      </div>
+      <a class="button button-light" href="#reservation">Find Your Table ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo footer-logo">✳ OLIVA <span>TABLE</span></a>
+    <p>A little Mediterranean magic, served daily.</p>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#reservation">Reservations</a>
+    </div>
+    <small>© <span id="year"></span> Oliva Table. Demo website for presentation purposes.</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
